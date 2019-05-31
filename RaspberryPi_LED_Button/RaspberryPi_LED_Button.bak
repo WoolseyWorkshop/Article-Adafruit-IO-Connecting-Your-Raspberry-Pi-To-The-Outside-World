@@ -1,0 +1,359 @@
+EESchema Schematic File Version 4
+LIBS:RaspberryPi_LED_Button-cache
+EELAYER 29 0
+EELAYER END
+$Descr A 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "Raspberry Pi With LED And Button"
+Date "2019-05-24"
+Rev "1.0"
+Comp "Woolsey Workshop"
+Comment1 "By: John Woolsey"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:+5V #PWR01
+U 1 1 580C1B61
+P 5750 1550
+F 0 "#PWR01" H 5750 1400 50  0001 C CNN
+F 1 "+5V" H 5750 1690 50  0000 C CNN
+F 2 "" H 5750 1550 50  0000 C CNN
+F 3 "" H 5750 1550 50  0000 C CNN
+	1    5750 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 1550 5750 1700
+Wire Wire Line
+	5750 1700 5550 1700
+Wire Wire Line
+	5750 1800 5550 1800
+Connection ~ 5750 1700
+$Comp
+L power:GND #PWR02
+U 1 1 580C1D11
+P 5650 3750
+F 0 "#PWR02" H 5650 3500 50  0001 C CNN
+F 1 "GND" H 5650 3600 50  0000 C CNN
+F 2 "" H 5650 3750 50  0000 C CNN
+F 3 "" H 5650 3750 50  0000 C CNN
+	1    5650 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 1900 5650 2300
+Wire Wire Line
+	5650 3300 5550 3300
+Wire Wire Line
+	5650 3100 5550 3100
+Connection ~ 5650 3300
+Wire Wire Line
+	5650 2600 5550 2600
+Connection ~ 5650 3100
+Wire Wire Line
+	5650 2300 5550 2300
+Connection ~ 5650 2600
+$Comp
+L power:GND #PWR03
+U 1 1 580C1E01
+P 4950 3750
+F 0 "#PWR03" H 4950 3500 50  0001 C CNN
+F 1 "GND" H 4950 3600 50  0000 C CNN
+F 2 "" H 4950 3750 50  0000 C CNN
+F 3 "" H 4950 3750 50  0000 C CNN
+	1    4950 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 3600 5050 3600
+Wire Wire Line
+	4950 2100 4950 2900
+Wire Wire Line
+	4950 2900 5050 2900
+Connection ~ 4950 3600
+Connection ~ 4850 1700
+Wire Wire Line
+	4850 2500 5050 2500
+Wire Wire Line
+	4850 1700 5050 1700
+Wire Wire Line
+	4850 1550 4850 1700
+$Comp
+L power:+3.3V #PWR04
+U 1 1 580C1BC1
+P 4850 1550
+F 0 "#PWR04" H 4850 1400 50  0001 C CNN
+F 1 "+3.3V" H 4850 1690 50  0000 C CNN
+F 2 "" H 4850 1550 50  0000 C CNN
+F 3 "" H 4850 1550 50  0000 C CNN
+	1    4850 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 2100 5050 2100
+Connection ~ 4950 2900
+Wire Wire Line
+	5050 1800 3900 1800
+Wire Wire Line
+	3900 1900 5050 1900
+Wire Wire Line
+	3900 2000 5050 2000
+Wire Wire Line
+	5050 2200 3900 2200
+Wire Wire Line
+	3900 2300 5050 2300
+Wire Wire Line
+	3900 2400 5050 2400
+Wire Wire Line
+	5050 2600 3900 2600
+Wire Wire Line
+	3900 2700 5050 2700
+Wire Wire Line
+	3900 2800 5050 2800
+Wire Wire Line
+	5050 3000 3900 3000
+Wire Wire Line
+	3900 3200 5050 3200
+Wire Wire Line
+	5050 3300 3900 3300
+Wire Wire Line
+	3900 3400 5050 3400
+Wire Wire Line
+	3900 3500 5050 3500
+Wire Wire Line
+	5550 3400 6600 3400
+Wire Wire Line
+	5550 3500 6600 3500
+Wire Wire Line
+	5550 2900 6600 2900
+Wire Wire Line
+	5550 3000 6600 3000
+Wire Wire Line
+	5550 2700 6600 2700
+Wire Wire Line
+	5550 2800 6600 2800
+Wire Wire Line
+	5550 2400 6600 2400
+Wire Wire Line
+	5550 2500 6600 2500
+Wire Wire Line
+	5550 2100 6600 2100
+Wire Wire Line
+	5550 2200 6600 2200
+Wire Wire Line
+	5550 2000 6600 2000
+Wire Wire Line
+	5550 3200 6600 3200
+Text Label 3900 1800 0    50   ~ 0
+GPIO2(I2C1_SDA)
+Text Label 3900 1900 0    50   ~ 0
+GPIO3(I2C1_SCL)
+Text Label 3900 2000 0    50   ~ 0
+GPIO4
+Text Label 3900 2200 0    50   ~ 0
+GPIO17(SPI1_CE1)
+Text Label 3900 2300 0    50   ~ 0
+GPIO27
+Text Label 3900 2400 0    50   ~ 0
+GPIO22
+Text Label 3900 2600 0    50   ~ 0
+GPIO10(SPI0_MOSI)
+Text Label 3900 2700 0    50   ~ 0
+GPIO9(SPI0_MISO)
+Text Label 3900 2800 0    50   ~ 0
+GPIO11(SPI0_SCK)
+Text Label 3900 3000 0    50   ~ 0
+ID_SD
+Text Label 3900 3100 0    50   ~ 0
+GPIO5
+Text Label 3900 3200 0    50   ~ 0
+GPIO6
+Text Label 3900 3300 0    50   ~ 0
+GPIO13(PWM1)
+Text Label 3900 3400 0    50   ~ 0
+GPIO19(SPI1_MISO,PWM1)
+Text Label 3900 3500 0    50   ~ 0
+GPIO26
+Text Label 6600 3500 2    50   ~ 0
+GPIO20(SPI1_MOSI)
+Text Label 6600 3400 2    50   ~ 0
+GPIO16(SPI1_CE2)
+Text Label 6600 3200 2    50   ~ 0
+GPIO12(PWM0)
+Text Label 6600 3000 2    50   ~ 0
+ID_SC
+Text Label 6600 2900 2    50   ~ 0
+GPIO7(SPI0_CE1)
+Text Label 6600 2800 2    50   ~ 0
+GPIO8(SPI0_CE0)
+Text Label 6600 2700 2    50   ~ 0
+GPIO25
+Text Label 6600 2500 2    50   ~ 0
+GPIO24
+Text Label 6600 2400 2    50   ~ 0
+GPIO23
+Text Label 6600 2200 2    50   ~ 0
+GPIO18(SPI1_CE0,PWM0)
+Text Label 6600 2100 2    50   ~ 0
+GPIO15(RX)
+Text Label 6600 2000 2    50   ~ 0
+GPIO14(TX)
+Wire Wire Line
+	5650 1900 5550 1900
+Connection ~ 5650 2300
+$Comp
+L RaspberryPi_LED_Button-rescue:Mounting_Hole-Mechanical-RaspberryPi-rescue MK1
+U 1 1 5834FB2E
+P 650 7650
+F 0 "MK1" H 750 7696 50  0000 L CNN
+F 1 "M2.5" H 750 7605 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 650 7650 60  0001 C CNN
+F 3 "" H 650 7650 60  0001 C CNN
+	1    650  7650
+	1    0    0    -1  
+$EndComp
+$Comp
+L RaspberryPi_LED_Button-rescue:Mounting_Hole-Mechanical-RaspberryPi-rescue MK3
+U 1 1 5834FBEF
+P 1100 7650
+F 0 "MK3" H 1200 7696 50  0000 L CNN
+F 1 "M2.5" H 1200 7605 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 1100 7650 60  0001 C CNN
+F 3 "" H 1100 7650 60  0001 C CNN
+	1    1100 7650
+	1    0    0    -1  
+$EndComp
+$Comp
+L RaspberryPi_LED_Button-rescue:Mounting_Hole-Mechanical-RaspberryPi-rescue MK2
+U 1 1 5834FC19
+P 650 7850
+F 0 "MK2" H 750 7896 50  0000 L CNN
+F 1 "M2.5" H 750 7805 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 650 7850 60  0001 C CNN
+F 3 "" H 650 7850 60  0001 C CNN
+	1    650  7850
+	1    0    0    -1  
+$EndComp
+$Comp
+L RaspberryPi_LED_Button-rescue:Mounting_Hole-Mechanical-RaspberryPi-rescue MK4
+U 1 1 5834FC4F
+P 1100 7850
+F 0 "MK4" H 1200 7896 50  0000 L CNN
+F 1 "M2.5" H 1200 7805 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 1100 7850 60  0001 C CNN
+F 3 "" H 1100 7850 60  0001 C CNN
+	1    1100 7850
+	1    0    0    -1  
+$EndComp
+Text Notes 650  7500 0    50   ~ 0
+Raspberry Pi\nMounting Holes
+$Comp
+L Connector_Generic:Conn_02x20_Odd_Even P1
+U 1 1 59AD464A
+P 5250 2600
+F 0 "P1" H 5300 3717 50  0000 C CNN
+F 1 "Conn_02x20_Odd_Even" H 5300 3626 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical" H 400 1650 50  0001 C CNN
+F 3 "" H 400 1650 50  0001 C CNN
+	1    5250 2600
+	1    0    0    -1  
+$EndComp
+Text Label 6600 3600 2    50   ~ 0
+GPIO21(SPI1_SCK)
+Wire Wire Line
+	5750 1700 5750 1800
+Wire Wire Line
+	5650 3300 5650 3750
+Wire Wire Line
+	5650 3100 5650 3300
+Wire Wire Line
+	5650 2600 5650 3100
+Wire Wire Line
+	4950 3600 4950 3750
+Wire Wire Line
+	4850 1700 4850 2500
+Wire Wire Line
+	4950 2900 4950 3600
+Wire Wire Line
+	5650 2300 5650 2600
+Text Notes 4800 1250 0    100  ~ 0
+Raspberry Pi
+Wire Notes Line
+	6700 1050 6700 4050
+Wire Notes Line
+	6700 4050 3800 4050
+Wire Notes Line
+	3800 4050 3800 1050
+Wire Notes Line
+	3800 1050 6700 1050
+$Comp
+L power:GND #PWR06
+U 1 1 5CE9EFF4
+P 7250 3750
+F 0 "#PWR06" H 7250 3500 50  0001 C CNN
+F 1 "GND" H 7255 3577 50  0000 C CNN
+F 2 "" H 7250 3750 50  0001 C CNN
+F 3 "" H 7250 3750 50  0001 C CNN
+	1    7250 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5CEA5F2F
+P 3600 3450
+F 0 "SW1" H 3600 3735 50  0000 C CNN
+F 1 "SW_Push" H 3600 3644 50  0000 C CNN
+F 2 "" H 3600 3650 50  0001 C CNN
+F 3 "~" H 3600 3650 50  0001 C CNN
+	1    3600 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 5CEAB094
+P 3600 3750
+F 0 "#PWR05" H 3600 3500 50  0001 C CNN
+F 1 "GND" H 3605 3577 50  0000 C CNN
+F 2 "" H 3600 3750 50  0001 C CNN
+F 3 "" H 3600 3750 50  0001 C CNN
+	1    3600 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R1
+U 1 1 5CEB05C0
+P 6900 3450
+F 0 "R1" H 6968 3496 50  0000 L CNN
+F 1 "330" H 6968 3405 50  0000 L CNN
+F 2 "" V 6940 3440 50  0001 C CNN
+F 3 "~" H 6900 3450 50  0001 C CNN
+	1    6900 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5CEB2731
+P 7250 3450
+F 0 "D1" V 7289 3333 50  0000 R CNN
+F 1 "LED" V 7198 3333 50  0000 R CNN
+F 2 "" H 7250 3450 50  0001 C CNN
+F 3 "~" H 7250 3450 50  0001 C CNN
+	1    7250 3450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3600 3100 3600 3250
+Wire Wire Line
+	3600 3100 5050 3100
+Wire Wire Line
+	3600 3650 3600 3750
+Wire Wire Line
+	5550 3600 6900 3600
+Wire Wire Line
+	6900 3300 7250 3300
+Wire Wire Line
+	7250 3600 7250 3750
+$EndSCHEMATC
